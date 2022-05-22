@@ -1,1 +1,1 @@
-0 2 * * sun tar czf - /home/user | ssh user@192.168.1.100 "cat > /backup/folder/path/bkp_user_home_$(date +%Y-%m-%d).tgz"
+0 23 * * sun tar czf - /home/user | ssh user@192.168.1.100 "cat > /backup/folder/path/bkp_user_home_$(date +%Y-%m-%d).tgz"
