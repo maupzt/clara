@@ -5,8 +5,8 @@ display_usage() {
 }
 
 display_path() {
-  display_usage
-  echo "The folder you provided doesn't exist. Try using the full path."
+  	display_usage
+  	echo "The folder you provided doesn't exist. Try using the full path."
 }
 
 # check if the user supplied -h or --help and then display usage
@@ -19,8 +19,8 @@ fi
 if [ -d $1 ];
 then
 	find $1 -name "*.sh" -exec head -1q {} \; | sort -n | uniq -c
-  echo "Done."
+  	echo "Done."
 else
-  display_path
-  exit 1
+  	display_path
+  	exit 1
 fi
