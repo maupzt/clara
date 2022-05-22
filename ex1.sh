@@ -1,12 +1,12 @@
 #!/bin/bash
 
 display_usage() {
-	echo "Usage: this script takes three parameters, two strings and a directory name, and substitutes any occurence of the first string with the second string for any file in the directory, recursively."
+     	echo "Usage: this script takes three parameters, two strings and a directory name, and substitutes any occurence of the first string with the second string for any file in the directory, recursively."
 }
 
 display_path() {
-    display_usage
-    echo "The folder you provided doesn't exist. Try using the full path."
+    	display_usage
+    	echo "The folder you provided doesn't exist. Try using the full path."
 }
 
 # check if the user supplied -h or --help and then display usage
