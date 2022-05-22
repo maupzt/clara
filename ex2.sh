@@ -18,7 +18,7 @@ fi
 # check the folder and execute, otherwise display usage
 if [ -d $1 ];
 then
-	find $1 -name "*.sh" -exec head -1q {} \; | sort -n | uniq -c
+	find $1 -name "*.sh" -exec grep -m 1 . {} \; | sort -n | uniq -c
   	echo "Done."
 else
   	display_path
